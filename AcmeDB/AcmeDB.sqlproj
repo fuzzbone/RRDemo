@@ -212,6 +212,7 @@
     <Folder Include="Programmable Objects\dbo\" />
     <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
     <Folder Include="Migrations\0001_Baseline" />
+    <Folder Include="Migrations\20171020" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
@@ -230,5 +231,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\0001_Baseline\0001_20171007-1027_DanielS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schema-Model\dbo\Tables\Question.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetQuestionsByProfileID.sql" />
+    <None Include="Migrations\20171020\001_QuestionTable.sql" />
   </ItemGroup>
 </Project>
