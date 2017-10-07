@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{a47554d2-2ff2-4146-a539-57977d4404a5}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -33,6 +33,14 @@
     <GenerateSqlPackage>True</GenerateSqlPackage>
     <PackageScriptBatchExecutionStrategy>WrapInExecuteWithSingleSetNoExec</PackageScriptBatchExecutionStrategy>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <ExcludeObjectsFromSync />
+    <IncludeObjectsInDataSync />
+    <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
+    <DeployChangesExecutionOrder />
+    <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
+    <BaselineAllDeployChangesMigrations>True</BaselineAllDeployChangesMigrations>
+    <DeployOnceUseSemver>True</DeployOnceUseSemver>
+    <SemverInitialBaseline>True</SemverInitialBaseline>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -197,11 +205,30 @@
     <Folder Include="Pre-Deployment\" />
     <Folder Include="Migrations\" />
     <Folder Include="Post-Deployment\" />
+    <Folder Include="Schema-Model\" />
+    <Folder Include="Schema-Model\dbo\" />
+    <Folder Include="Schema-Model\dbo\Tables\" />
+    <Folder Include="Programmable Objects\" />
+    <Folder Include="Programmable Objects\dbo\" />
+    <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
+    <Folder Include="Migrations\0001_Baseline" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schema-Model\dbo\Tables\CartItem.sql" />
+    <None Include="Schema-Model\dbo\Tables\Product.sql" />
+    <None Include="Schema-Model\dbo\Tables\Profile.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetAllProducts.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\GetProductsByID.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0001_Baseline\0001_20171007-1027_DanielS.sql" />
   </ItemGroup>
 </Project>
