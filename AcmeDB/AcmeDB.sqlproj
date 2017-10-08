@@ -213,6 +213,7 @@
     <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
     <Folder Include="Migrations\1.0.0-Baseline" />
     <Folder Include="Migrations\20171020" />
+    <Folder Include="Migrations\20171201" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
@@ -238,5 +239,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.0.0-Baseline\0001_20171007-1027_DanielS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\20171201\001_20171008-1538_DanielS.sql" />
   </ItemGroup>
 </Project>

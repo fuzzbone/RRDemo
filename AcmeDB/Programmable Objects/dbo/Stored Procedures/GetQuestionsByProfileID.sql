@@ -1,4 +1,4 @@
-﻿IF OBJECT_ID('[dbo].[GetQuestionsByProfileID]') IS NOT NULL
+IF OBJECT_ID('[dbo].[GetQuestionsByProfileID]') IS NOT NULL
 	DROP PROCEDURE [dbo].[GetQuestionsByProfileID];
 
 GO
@@ -26,7 +26,8 @@ BEGIN
 			q.ProfileID,
 			p.FirstName,
 			p.LastName,
-			p.UserID
+			p.UserID,
+			p.LastLoginDate
     FROM dbo.Question q
 	INNER JOIN dbo.Profile p ON q.ProfileID = p.ID 
 END
