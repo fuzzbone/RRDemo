@@ -41,6 +41,8 @@
     <BaselineAllDeployChangesMigrations>True</BaselineAllDeployChangesMigrations>
     <DeployOnceUseSemver>True</DeployOnceUseSemver>
     <SemverInitialBaseline>True</SemverInitialBaseline>
+    <AlwaysUseDefaultConnectionForShadowDatabase>True</AlwaysUseDefaultConnectionForShadowDatabase>
+    <DefaultConnectionString>Data Source=.;Initial Catalog=ACMEDb;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</DefaultConnectionString>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
