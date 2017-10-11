@@ -26,7 +26,7 @@ BEGIN
 			q.ProfileID,
 			p.FirstName,
 			p.LastName,
-			p.UserID
+			p.UserID AS 'User'
     FROM dbo.Question q
 	INNER JOIN dbo.Profile p ON q.ProfileID = p.ID 
 END
